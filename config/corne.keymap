@@ -12,7 +12,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        Base {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
             // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
@@ -28,14 +28,14 @@
             >;
         };
 
-        lower_layer {
+        TKArrow {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
             // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
             // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
-            display-name = "TK_Arrow";
+            display-name = "TKArrow";
             bindings = <
 &kp TAB    &trans    &kp UP    &trans     &kp C_PLAY_PAUSE  &kp C_VOL_UP    &kp N7     &kp N8   &kp N9  &kp N0     &kp DEL   &kp BSPC
 &kp LCTRL  &kp LEFT  &kp DOWN  &kp RIGHT  &trans            &kp C_VOL_DN    &kp N4     &kp N5   &kp N6  &kp FSLH   &kp STAR  &kp DOT
@@ -44,7 +44,7 @@
             >;
         };
 
-        raise_layer {
+        Symbol {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
             // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
